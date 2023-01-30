@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int x,n,a;
+	int op;
+	printf("1.power\n2.addition\n3.subraction\n4.multiplication\n5.division\n");
+	printf("entre the values of x&n :");
+	scanf("%d%d",&x,&n);
+	printf("entre your choice :");
+	scanf("%d",&op);
+	switch (op)
+	{
+		case 1 :
+			a=pow(x,n);
+			printf("power of %d and %d is : %d",x,n,a);
+			break;
+			case 2 :
+				printf("addition of %d and %d is :%d ",x,n,x+n);
+				break;
+				case 3 :
+					printf("subtraction of %d and %d is :%d ",x,n,x-n);
+					break;
+					case 4 :
+						printf("multiplication of %d and %d is :%d ",x,n,x*n);
+						break;
+						case 5 :
+							printf("division of %d and %d s :%d ",x,n, x/n);
+							break;
+							default:
+							printf("entre your correct choice :");
+							break;
+	}
+	return 0;
+}
