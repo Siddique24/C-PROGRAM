@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int age;
+	printf("enter the age:");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+	printf("congratulation! you are eligible to declare your vote");
+}
+	else
+	{
+	printf("you can't vote\n");
+	printf("you need to wait for %d years to be eligible for vote\n",18-age);
+}
+	getch();
+	return 0;
+}
